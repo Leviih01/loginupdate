@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Példa Felhasználó",
+        "subject": "Hálózati hiba",
+        "content": "Nem tudok kapcsolódni az internethez."
+    },
+    {
+        "name": "Másik Felhasználó",
+        "subject": "Probléma a szoftverrel",
+        "content": "Az alkalmazás folyamatosan összeomlik."
+    }
+]

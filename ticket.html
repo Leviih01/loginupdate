@@ -1,0 +1,51 @@
+<!DOCTY sPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hibajegy Rendszer</title>
+    <link rel="stylesheet" href="ticket.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menü</h2>
+        <ul>
+            <li><a href="admin.html">Admin Panel</a></li>
+            <li><a href="login.html">Kijelentkezés</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Hibajegy Létrehozása</h1>
+
+        <div id="ticketForm">
+            <h2>Új Hibajegy</h2>
+            <label for="ticketName">Név:</label>
+            <input type="text" id="ticketName" placeholder="Név...">
+            <label for="ticketSubject">Tárgy:</label>
+            <input type="text" id="ticketSubject" placeholder="Tárgy...">
+            <label for="ticketContent">Hibajegy Tartalma:</label>
+            <textarea id="ticketContent" placeholder="Hibajegy tartalma..."></textarea>
+            <button onclick="createTicket()">Hibajegy Létrehozása</button>
+        </div>
+
+        <div id="ticketList">
+            <h2>Korábbi Hibajegyek</h2>
+            <select id="ticketSelect" onchange="displayTicket()">
+                <option value="" disabled selected>Válasszon hibajegyet...</option>
+            </select>
+        </div>
+
+        <div id="selectedTicket">
+            <h2>Hibajegy részletei</h2>
+            <p id="ticketDetails"></p>
+            <button onclick="deleteTicket()">Hibajegy törlése</button>
+            <textarea id="commentInput" placeholder="Hozzászólás..."></textarea>
+            <button onclick="addComment()">Hozzászólás küldése</button>
+            <ul id="commentList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="ticket.js"></script>
+</body>
+</html>
